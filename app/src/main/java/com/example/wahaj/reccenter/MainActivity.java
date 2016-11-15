@@ -1,5 +1,6 @@
 package com.example.wahaj.reccenter;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -38,4 +39,18 @@ public class MainActivity extends AppCompatActivity {
     public void programsPressed(View view) {
     }
 
+    public void parkingPressed(View view) {
+    }
+
+    public void hoursPressed(View view) {
+    }
+
+    public void howbusyPressed(View view) {
+    }
+
+    public void rentalsPressed(View view) {
+        Intent myIntent = new Intent(MainActivity.this, RentalsActivity.class);
+        MainActivity.this.startActivity(myIntent);
+
+    }
 }
