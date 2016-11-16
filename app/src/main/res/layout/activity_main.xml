@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.hannahrueb.reccenter.MainActivity" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:id="@+id/Fitness"
+
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/fitness"
+                android:background="@drawable/round_button"
+                android:onClick="FitnessPressed" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:id="@+id/Aquatic"
+
+                android:layout_marginRight="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/aquatic"
+                android:background="@drawable/round_button"
+                android:onClick="aquaticPressed" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_gravity="left"
+            android:text="Fitness Center"
+            android:layout_marginLeft="45dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:id="@+id/OlympicOval"
+
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/round_button"
+                android:src="@drawable/olympicoval"
+                android:onClick="olympicovalPressed" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:id="@+id/Courts"
+
+                android:layout_marginRight="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="30dp"
+
+                android:background="@drawable/round_button"
+                android:src="@drawable/courts"
+                android:onClick="courtsPressed"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:id="@+id/Climbing"
+
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+
+                android:background="@drawable/round_button"
+                android:src="@drawable/climbing"
+                android:onClick="climbingPressed"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:id="@+id/Outdoor"
+
+                android:layout_marginRight="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="30dp"
+
+                android:background="@drawable/round_button"
+                android:src="@drawable/outdoor"
+                android:onClick="outdoorPressed"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:id="@+id/LevelUp"
+
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+
+                android:background="@drawable/round_button"
+                android:src="@drawable/levelup"
+                android:onClick="levelupPressed"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:id="@+id/Programs"
+
+                android:layout_marginRight="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="30dp"
+
+                android:background="@drawable/round_button"
+                android:src="@drawable/programs"
+                android:onClick="programsPressed"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:id="@+id/Parking"
+
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+
+                android:background="@drawable/round_button"
+
+                android:onClick="parkingPressed"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:id="@+id/Hours"
+
+                android:layout_marginRight="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="30dp"
+
+                android:background="@drawable/round_button"
+
+                android:onClick="hoursPressed"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:id="@+id/HowBusy"
+
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+
+                android:background="@drawable/round_button"
+                android:onClick="howbusyPressed"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:id="@+id/Rentals"
+
+                android:layout_marginRight="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="30dp"
+
+                android:background="@drawable/round_button"
+                android:onClick="rentalsPressed"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
