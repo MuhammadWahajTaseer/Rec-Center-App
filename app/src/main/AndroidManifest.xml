@@ -15,8 +15,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RentalsActivity"
-                android:label="Rentals"></activity>
+        <activity
+            android:name=".RentalsActivity"
+            android:label="Rentals" />
+        <activity
+            android:name=".FitnessHours"
+            android:label="Fitness" />
+        <activity android:name=".FacilityOptions"></activity>
     </application>
 
 </manifest>

@@ -5,8 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
+
 public class MainActivity extends AppCompatActivity {
 
+    public static String EXTRA_MESSAGE = "hi";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
 
     // Ripple effect only shows when there is a method associated with it
     public void FitnessPressed(View view) {
+        Intent myIntent = new Intent(MainActivity.this, FacilityOptions.class);
+        myIntent.putExtra(EXTRA_MESSAGE, "FromFitness");
+        MainActivity.this.startActivity(myIntent);
 
     }
 
