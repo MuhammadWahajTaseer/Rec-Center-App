@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     // Ripple effect only shows when there is a method associated with it
     public void FitnessPressed(View view) {
         Intent myIntent = new Intent(MainActivity.this, FacilityOptions.class);
-        myIntent.putExtra(EXTRA_MESSAGE, "FromFitness");
+        myIntent.putExtra(EXTRA_MESSAGE, "fitness");
         MainActivity.this.startActivity(myIntent);
 
     }
