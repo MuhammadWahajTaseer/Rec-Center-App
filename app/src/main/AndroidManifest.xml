@@ -21,7 +21,9 @@
         <activity
             android:name=".FitnessHours"
             android:label="Fitness" />
-        <activity android:name=".FacilityOptions"></activity>
+        <activity android:name=".FacilityOptions" />
+        <activity android:name=".RentalsActivity2" />
+        <activity android:name=".RentalsActivity3"></activity>
     </application>
 
 </manifest>

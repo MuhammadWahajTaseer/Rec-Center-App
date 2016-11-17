@@ -25,33 +25,49 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void aquaticPressed(View view) {
+        Intent myIntent = new Intent(MainActivity.this, FacilityOptions.class);
+        myIntent.putExtra(EXTRA_MESSAGE, "aquatic");
+        MainActivity.this.startActivity(myIntent);
     }
 
     public void climbingPressed(View view) {
+        Intent myIntent = new Intent(MainActivity.this, FacilityOptions.class);
+        myIntent.putExtra(EXTRA_MESSAGE, "climbing");
+        MainActivity.this.startActivity(myIntent);
     }
 
     public void courtsPressed(View view) {
+        Intent myIntent = new Intent(MainActivity.this, FacilityOptions.class);
+        myIntent.putExtra(EXTRA_MESSAGE, "courts");
+        MainActivity.this.startActivity(myIntent);
     }
 
     public void olympicovalPressed(View view) {
+        Intent myIntent = new Intent(MainActivity.this, FacilityOptions.class);
+        myIntent.putExtra(EXTRA_MESSAGE, "olympicoval");
+        MainActivity.this.startActivity(myIntent);
     }
 
     public void outdoorPressed(View view) {
+        Intent myIntent = new Intent(MainActivity.this, FacilityOptions.class);
+        myIntent.putExtra(EXTRA_MESSAGE, "outdoor");
+        MainActivity.this.startActivity(myIntent);
     }
 
     public void levelupPressed(View view) {
+        Intent myIntent = new Intent(MainActivity.this, FacilityOptions.class);
+        myIntent.putExtra(EXTRA_MESSAGE, "levelup");
+        MainActivity.this.startActivity(myIntent);
     }
 
     public void programsPressed(View view) {
+        Intent myIntent = new Intent(MainActivity.this, FacilityOptions.class);
+        myIntent.putExtra(EXTRA_MESSAGE, "programs");
+        MainActivity.this.startActivity(myIntent);
     }
 
     public void parkingPressed(View view) {
-    }
 
-    public void hoursPressed(View view) {
-    }
-
-    public void howbusyPressed(View view) {
     }
 
     public void rentalsPressed(View view) {
