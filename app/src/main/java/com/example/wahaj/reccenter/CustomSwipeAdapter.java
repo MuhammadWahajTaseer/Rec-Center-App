@@ -15,9 +15,12 @@ import android.widget.TextView;
 
 public class CustomSwipeAdapter extends PagerAdapter {
 
-    private int[] image_resorces = {R.drawable.icon_canoe, R.drawable.icon_helmet, R.drawable.icon_kayak};
+    private int[] image_resources = {R.drawable.icon_canoe, R.drawable.icon_lifejacket,
+            R.drawable.icon_kayak, R.drawable.icon_raft, R.drawable.icon_helmet};
+    private String[] image_labels= {"Canoe", "Life Jacket", "Kayak", "Raft", "Helmet"};
+    private String[] image_prices= {"Price = $26", "Price = $3", "Price = $18", "Price = $45", "Price = $3950"};
     private Context ctx;
-    private LayoutInflater layoutInflator;
+
 
     public CustomSwipeAdapter(Context ctx){
 
@@ -27,23 +30,27 @@ public class CustomSwipeAdapter extends PagerAdapter {
 
     @Override
     public int getCount() {
-        return image_resorces.length;
+        return image_resources.length;
     }
 
     @Override
     public boolean isViewFromObject(View view, Object object) {
-        return (view == (LinearLayout) object);
+        return (view == object);
     }
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
-        layoutInflator = (LayoutInflater) ctx.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        LayoutInflater layoutInflator = (LayoutInflater) ctx.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View item_view = layoutInflator.inflate(R.layout.swipe_layout, container, false);
 
         ImageView imageView = (ImageView) item_view.findViewById(R.id.image_view);
-        TextView textView = (TextView) item_view.findViewById(R.id.image_count);
-        imageView.setImageResource(image_resorces[position]);
-        textView.setText("Image: " + position);
+        TextView textViewLabel = (TextView) item_view.findViewById(R.id.image_count);
+        TextView textViewPrice = (TextView) item_view.findViewById(R.id.image_price);
+
+        imageView.setImageResource(image_resources[position]);
+        textViewLabel.setText(image_labels[position]);
+        textViewPrice.setText(image_prices[position]);
+
         container.addView(item_view);
 
         return item_view;
