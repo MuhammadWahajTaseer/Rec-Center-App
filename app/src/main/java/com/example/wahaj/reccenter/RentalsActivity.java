@@ -17,7 +17,7 @@ public class RentalsActivity extends AppCompatActivity {
     }
 
     public void outdoorRentalsPressed(View view) {
-        Intent myIntent = new Intent(RentalsActivity.this, RentalsActivity2.class);
+        Intent myIntent = new Intent(RentalsActivity.this, RentalsOutdoor.class);
         RentalsActivity.this.startActivity(myIntent);
     }
 }

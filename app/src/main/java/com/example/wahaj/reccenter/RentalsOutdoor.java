@@ -5,12 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class RentalsActivity2 extends AppCompatActivity {
+public class RentalsOutdoor extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rentals2);
+        setContentView(R.layout.activity_rentals_outdoor);
     }
 
     public void rentalsSkiPressed(View view) {
@@ -23,8 +23,8 @@ public class RentalsActivity2 extends AppCompatActivity {
     }
 
     public void rentalsWatersportsPressed(View view) {
-        Intent myIntent = new Intent(RentalsActivity2.this, RentalsActivity3.class);
-        RentalsActivity2.this.startActivity(myIntent);
+        Intent myIntent = new Intent(RentalsOutdoor.this, RentalsWaterSports.class);
+        RentalsOutdoor.this.startActivity(myIntent);
 
     }
 

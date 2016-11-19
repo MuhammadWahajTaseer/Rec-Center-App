@@ -11,7 +11,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.wahaj.reccenter.MainActivity">
+    tools:context="com.example.wahaj.reccenter.RentalsOutdoor"
+    android:background="@drawable/test">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,6 +29,7 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="30dp"
             android:background="@drawable/round_button"
+            android:src="@drawable/icon_snowboardingskiing"
             android:onClick="rentalsSkiPressed"/>
 
         <Space
@@ -44,6 +46,7 @@
             android:layout_marginRight="25dp"
             android:layout_marginTop="30dp"
             android:background="@drawable/round_button"
+            android:src="@drawable/icon_biking"
             android:onClick="rentalsBikingPressed"/>
 
     </LinearLayout>
@@ -64,6 +67,7 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="30dp"
             android:background="@drawable/round_button"
+            android:src="@drawable/icon_camping"
             android:onClick="rentalsCampingPressed"/>
 
         <Space
@@ -79,8 +83,8 @@
             android:layout_marginEnd="25dp"
             android:layout_marginRight="25dp"
             android:layout_marginTop="30dp"
-
             android:background="@drawable/round_button"
+            android:src="@drawable/icon_watersports"
             android:onClick="rentalsWatersportsPressed"/>
     </LinearLayout>
 
@@ -99,8 +103,8 @@
             android:layout_marginLeft="25dp"
             android:layout_marginStart="25dp"
             android:layout_marginTop="30dp"
-
             android:background="@drawable/round_button"
+            android:src="@drawable/icon_climbing"
             android:onClick="rentalClimbingPressed"/>
 
         <Space
@@ -116,14 +120,11 @@
             android:layout_marginEnd="25dp"
             android:layout_marginRight="25dp"
             android:layout_marginTop="30dp"
-
             android:background="@drawable/round_button"
+            android:src="@drawable/icon_clothing"
             android:onClick="rentalsClothingPressed"/>
 
     </LinearLayout>
-
-
-
 
 </LinearLayout>
 

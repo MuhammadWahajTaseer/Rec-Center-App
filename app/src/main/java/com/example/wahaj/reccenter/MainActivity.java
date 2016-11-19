@@ -55,15 +55,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void levelupPressed(View view) {
-        Intent myIntent = new Intent(MainActivity.this, FacilityOptions.class);
-        myIntent.putExtra(EXTRA_MESSAGE, "levelup");
-        MainActivity.this.startActivity(myIntent);
     }
 
     public void programsPressed(View view) {
-        Intent myIntent = new Intent(MainActivity.this, FacilityOptions.class);
-        myIntent.putExtra(EXTRA_MESSAGE, "programs");
-        MainActivity.this.startActivity(myIntent);
     }
 
     public void parkingPressed(View view) {
