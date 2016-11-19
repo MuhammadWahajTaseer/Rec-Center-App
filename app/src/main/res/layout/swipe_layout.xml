@@ -18,7 +18,8 @@
         android:id="@+id/image_view"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="5dp"
+        android:onClick="RentalEquimentPressed"/>
 
     <TextView
         android:id="@+id/image_price"
