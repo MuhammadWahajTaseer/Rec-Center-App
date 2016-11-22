@@ -13,27 +13,34 @@ public class FacilityOptions extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         Intent intent = getIntent();
         myMessage = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 
         // Setting theme of the activity (Basically just the menu bar)
         if(myMessage.equals("fitness")){
             setTheme(R.style.AppThemeRed);
+            setTitle("Fitness Center");
         }
         else if(myMessage.equals("aquatic")){
             setTheme(R.style.AppThemeBBlue);
+            setTitle("Aquatic Center");
         }
         else if(myMessage.equals("climbing")){
             setTheme(R.style.AppThemeBrown);
+            setTitle("Climbing Wall");
         }
         else if(myMessage.equals("courts")){
             setTheme(R.style.AppThemeOrange);
+            setTitle("Racket Center");
         }
         else if(myMessage.equals("olympicoval")){
             setTheme(R.style.AppThemeStoneBlue);
+            setTitle("Olympic Oval");
         }
         else if(myMessage.equals("outdoor")){
             setTheme(R.style.AppThemeLightGreen);
+            setTitle("Outdoor Center");
         }
         else{
             setTheme(R.style.AppThemeGrey);

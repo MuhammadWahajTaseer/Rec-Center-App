@@ -16,9 +16,9 @@ import android.widget.TextView;
 public class CustomSwipeAdapter extends PagerAdapter {
 
     private int[] image_resources = {R.drawable.icon_canoe, R.drawable.icon_lifejacket,
-            R.drawable.icon_kayak, R.drawable.icon_raft, R.drawable.icon_helmet};
-    private String[] image_labels= {"Canoe", "Life Jacket", "Kayak", "Raft", "Helmet"};
-    private String[] image_prices= {"Price = $26", "Price = $3", "Price = $18", "Price = $45", "Price = $3950"};
+            R.drawable.icon_kayak, R.drawable.icon_raft, R.drawable.icon_helmet, R.drawable.icon_paddles, R.drawable.icon_wetsuit, };
+    private String[] image_labels= {"Canoe", "Life Jacket", "Kayak", "Raft", "Helmet", "Paddles", "Wetsuit"};
+    private String[] image_prices= {"Price = $26", "Price = $3", "Price = $18", "Price = $45", "Price = $3", "Price = $2 - 6", "Price = $10"};
     private Context ctx;
 
 

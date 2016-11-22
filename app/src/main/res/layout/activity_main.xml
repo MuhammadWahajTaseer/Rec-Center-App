@@ -10,7 +10,7 @@ android:layout_height="match_parent"
         android:orientation="vertical"
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:paddingBottom="@dimen/activity_vertical_margin"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
@@ -20,191 +20,318 @@ android:layout_height="match_parent"
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="1">
+            android:orientation="horizontal" >
 
-            <ImageView
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:id="@+id/Fitness"
-
-                android:layout_marginLeft="25dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/fitness"
-                android:background="@drawable/round_button"
-                android:onClick="FitnessPressed" />
+            <RelativeLayout
+                android:layout_width="155dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/Fitness"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/fitness"
+                    android:background="@drawable/round_button"
+                    android:onClick="FitnessPressed" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@id/Fitness"
+                    android:text="Fitness Center"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"/>
+            </RelativeLayout>
 
             <Space
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"/>
 
-            <ImageView
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:id="@+id/Aquatic"
-
-                android:layout_marginRight="25dp"
-                android:layout_marginEnd="25dp"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/aquatic"
-                android:background="@drawable/round_button"
-                android:onClick="aquaticPressed" />
+            <RelativeLayout
+                android:layout_width="155dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/Aquatic"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/aquatic"
+                    android:background="@drawable/round_button"
+                    android:onClick="aquaticPressed" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@id/Aquatic"
+                    android:text="Aquatic Center"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="25dp"/>
+            </RelativeLayout>
 
         </LinearLayout>
+
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="1">
+            android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:id="@+id/OlympicOval"
-
-                android:layout_marginLeft="25dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/round_button"
-                android:src="@drawable/olympicoval"
-                android:onClick="olympicovalPressed" />
+            <RelativeLayout
+                android:layout_width="155dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/OlympicOval"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/round_button"
+                    android:src="@drawable/olympicoval"
+                    android:onClick="olympicovalPressed" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@id/OlympicOval"
+                    android:text="Olympic Oval"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"/>
+            </RelativeLayout>
 
             <Space
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"/>
 
-            <ImageView
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:id="@+id/Courts"
+            <RelativeLayout
+                android:layout_width="155dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/Courts"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/round_button"
+                    android:src="@drawable/courts"
+                    android:onClick="courtsPressed"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@id/Courts"
+                    android:text="Racket Center"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="25dp"/>
+            </RelativeLayout>
 
-                android:layout_marginRight="25dp"
-                android:layout_marginEnd="25dp"
-                android:layout_marginTop="30dp"
-
-                android:background="@drawable/round_button"
-                android:src="@drawable/courts"
-                android:onClick="courtsPressed"/>
         </LinearLayout>
+
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="1">
+            android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:id="@+id/Climbing"
-
-                android:layout_marginLeft="25dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="30dp"
-
-                android:background="@drawable/round_button"
-                android:src="@drawable/climbing"
-                android:onClick="climbingPressed"/>
+            <RelativeLayout
+                android:layout_width="155dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/Climbing"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/round_button"
+                    android:src="@drawable/climbing"
+                    android:onClick="climbingPressed"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@id/Climbing"
+                    android:text="Climbing Wall"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"/>
+            </RelativeLayout>
 
             <Space
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
-            <ImageView
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:id="@+id/Outdoor"
-
-                android:layout_marginRight="25dp"
-                android:layout_marginEnd="25dp"
-                android:layout_marginTop="30dp"
-
-                android:background="@drawable/round_button"
-                android:src="@drawable/outdoor"
-                android:onClick="outdoorPressed"/>
+            <RelativeLayout
+                android:layout_width="155dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/Outdoor"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/round_button"
+                    android:src="@drawable/outdoor"
+                    android:onClick="outdoorPressed"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@id/Outdoor"
+                    android:text="Outdoor Center"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="25dp"/>
+            </RelativeLayout>
 
         </LinearLayout>
+
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ImageView
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:id="@+id/LevelUp"
-
-                android:layout_marginLeft="25dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="30dp"
-
-                android:background="@drawable/round_button"
-                android:src="@drawable/levelup"
-                android:onClick="levelupPressed"/>
+            <RelativeLayout
+                android:layout_width="155dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/LevelUp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/round_button"
+                    android:src="@drawable/levelup"
+                    android:onClick="levelupPressed"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@id/LevelUp"
+                    android:text="Level Up"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"/>
+            </RelativeLayout>
 
             <Space
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
-            <ImageView
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:id="@+id/Programs"
-
-                android:layout_marginRight="25dp"
-                android:layout_marginEnd="25dp"
-                android:layout_marginTop="30dp"
-
-                android:background="@drawable/round_button"
-                android:src="@drawable/programs"
-                android:onClick="programsPressed"/>
+            <RelativeLayout
+                android:layout_width="155dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/Programs"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/round_button"
+                    android:src="@drawable/programs"
+                    android:onClick="programsPressed"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@id/Programs"
+                    android:text="Programs"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="25dp"/>
+            </RelativeLayout>
 
         </LinearLayout>
+
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ImageView
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:id="@+id/Parking"
+            <RelativeLayout
+                android:layout_width="155dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/Parking"
 
-                android:layout_marginLeft="25dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="25dp"
 
-                android:background="@drawable/round_button"
-                android:src="@drawable/parking"
-                android:onClick="parkingPressed"/>
+                    android:background="@drawable/round_button"
+                    android:src="@drawable/parking"
+                    android:onClick="parkingPressed"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@id/Parking"
+                    android:text="Parking"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"/>
+            </RelativeLayout>
 
             <Space
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
-            <ImageView
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:id="@+id/Rentals"
-
-                android:layout_marginRight="25dp"
-                android:layout_marginEnd="25dp"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/rentals"
-                android:background="@drawable/round_button"
-                android:onClick="rentalsPressed"/>
-
+            <RelativeLayout
+                android:layout_width="155dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/Rentals"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/rentals"
+                    android:background="@drawable/round_button"
+                    android:onClick="rentalsPressed"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@id/Rentals"
+                    android:text="Rentals"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="25dp"/>
+            </RelativeLayout>
 
         </LinearLayout>
 

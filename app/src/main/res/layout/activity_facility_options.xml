@@ -11,44 +11,67 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center"
     tools:context="com.example.wahaj.reccenter.FacilityOptions"
     android:background="@drawable/test">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:orientation="horizontal">
 
-        <ImageView
-            android:id="@+id/HoursOption"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/round_button"
-            android:onClick="HoursOptionPressed"
-            android:src="@drawable/hours"
-             />
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/HoursOption"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/round_button"
+                android:onClick="HoursOptionPressed"
+                android:src="@drawable/hours"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/HoursOption"
+                android:text="Hours of Operation"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"/>
+        </RelativeLayout>
 
         <Space
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
-        <ImageView
-            android:id="@+id/HowBusyOption"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-
-            android:layout_marginEnd="25dp"
-            android:layout_marginRight="25dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/round_button"
-            android:onClick="HowBusyOptionPressed"
-            android:src="@drawable/how_busy"
-             />
+        <RelativeLayout
+            android:layout_width="155dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/HowBusyOption"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/round_button"
+                android:onClick="HowBusyOptionPressed"
+                android:src="@drawable/how_busy"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/HowBusyOption"
+                android:text="How Busy?"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginRight="25dp"
+                android:layout_marginEnd="25dp"/>
+        </RelativeLayout>
 
     </LinearLayout>
 
@@ -56,40 +79,63 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:orientation="horizontal">
 
-        <ImageView
-            android:id="@+id/AboutOption"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-
-            android:layout_marginLeft="25dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/round_button"
-            android:onClick="AboutOptionPressed"
-            android:src="@drawable/about"
-             />
+        <RelativeLayout
+            android:layout_width="155dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/AboutOption"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/round_button"
+                android:onClick="AboutOptionPressed"
+                android:src="@drawable/about"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/AboutOption"
+                android:text="About"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"/>
+        </RelativeLayout>
 
         <Space
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
-        <ImageView
-            android:id="@+id/ContactOption"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
+        <RelativeLayout
+            android:layout_width="155dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ContactOption"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/round_button"
+                android:onClick="ContactOptionPressed"
+                android:src="@drawable/contact"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/ContactOption"
+                android:text="Contact Us"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginRight="25dp"
+                android:layout_marginEnd="25dp"/>
+        </RelativeLayout>
 
-            android:layout_marginEnd="25dp"
-            android:layout_marginRight="25dp"
-            android:layout_marginTop="30dp"
-
-            android:background="@drawable/round_button"
-            android:onClick="ContactOptionPressed"
-            android:src="@drawable/contact"
-             />
     </LinearLayout>
 
 </LinearLayout>
