@@ -19,7 +19,7 @@ public class FacilityOptions extends AppCompatActivity {
 
         // Setting theme of the activity (Basically just the menu bar)
         if(myMessage.equals("fitness")){
-            setTheme(R.style.AppThemeRed);
+            setTheme(R.style.AppThemeBlack);
             setTitle("Fitness Center");
         }
         else if(myMessage.equals("aquatic")){
@@ -45,8 +45,6 @@ public class FacilityOptions extends AppCompatActivity {
         else{
             setTheme(R.style.AppThemeGrey);
         }
-
-
         setContentView(R.layout.activity_facility_options);
 
 
@@ -61,11 +59,23 @@ public class FacilityOptions extends AppCompatActivity {
     }
 
     public void HowBusyOptionPressed(View view) {
+        if(myMessage.equals("fitness")){
+            Intent myIntent = new Intent(FacilityOptions.this, HowBusy.class);
+            FacilityOptions.this.startActivity(myIntent);
+        }
     }
 
     public void AboutOptionPressed(View view) {
+        if(myMessage.equals("fitness")){
+            Intent myIntent = new Intent(FacilityOptions.this, AboutFitness.class);
+            FacilityOptions.this.startActivity(myIntent);
+        }
     }
 
     public void ContactOptionPressed(View view) {
+        if(myMessage.equals("fitness")){
+            Intent myIntent = new Intent(FacilityOptions.this, FitnessContact.class);
+            FacilityOptions.this.startActivity(myIntent);
+        }
     }
 }

@@ -10,8 +10,8 @@ import android.view.View;
 
 public class RentalsWaterSports extends AppCompatActivity {
 
-    ViewPager viewPager;
-    CustomSwipeAdapter adapter;
+    private ViewPager viewPager;
+    private CustomSwipeAdapter adapter;
 
 
     @Override

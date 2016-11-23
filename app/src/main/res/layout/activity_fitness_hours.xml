@@ -10,7 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.wahaj.reccenter.FitnessHours"
     android:orientation="vertical"
-    android:background="@drawable/test">
+    android:background="@drawable/bg">
 
     <TextView
         android:text="Regular Hours"
